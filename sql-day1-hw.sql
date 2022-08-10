@@ -3,7 +3,7 @@ select count(last_name)
 from actor 
 where last_name = 'Wahlberg';
 
--- Question 2 --> 4,764 *******
+-- Question 2 --> 4,764
 select count(amount)
 from payment
 where amount between 3.99 and 5.99;
@@ -40,7 +40,7 @@ from customer
 where last_name like '%es' and store_id = 1
 group by store_id;
 
--- Question 9 --> *********
+-- Question 9 --> *
 select customer_id, sum(amount)
 from payment
 where customer_id between 380 and 430 
